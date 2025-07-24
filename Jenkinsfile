@@ -8,10 +8,10 @@ pipeline {
         KUBECONFIG_CREDENTIALS = credentials('kubeconfig-credentials') // Kubernetes kubeconfig credentials
     }
     tools {
-    maven 'mymaven murugan'
+    maven 'mymaven'
     }
     stages {
-        stage('Checkout Code') {
+        stage('Check murugan') {
             steps {
                 echo 'Cloning the repository...'
                 git url: 'https://github.com/murugan2387/vanakkam-world', branch: 'master'
