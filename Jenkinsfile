@@ -63,7 +63,7 @@ pipeline {
             echo 'Pipeline completed successfully!'
         }
         failure {
-            echo 'Pipeline failed murugn!'
+            echo 'Murugan Pipeline failed!'
         }
     }
 }
