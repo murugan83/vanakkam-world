@@ -8,7 +8,7 @@ pipeline {
         KUBECONFIG_CREDENTIALS = credentials('kubeconfig-credentials') // Kubernetes kubeconfig credentials
     }
     tools {
-    maven 'mymaven'
+    maven 'mymaven murugan'
     }
     stages {
         stage('Checkout Code') {
@@ -63,7 +63,7 @@ pipeline {
             echo 'Pipeline completed successfully!'
         }
         failure {
-            echo 'Murugan Pipeline failed!'
+            echo 'Pipeline failed!'
         }
     }
 }
