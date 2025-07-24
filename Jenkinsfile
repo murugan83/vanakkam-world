@@ -11,7 +11,7 @@ pipeline {
     maven 'mymaven'
     }
     stages {
-        stage('Check murugan') {
+        stage('Check') {
             steps {
                 echo 'Cloning the repository...'
                 git url: 'https://github.com/murugan2387/vanakkam-world', branch: 'master'
